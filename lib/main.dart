@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter100day/home.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter100day/day2/day2.dart';
+
+import 'package:flutter100day/home.dart';
+
 import 'package:flutter100day/day1/day1.dart';
+import 'package:flutter100day/day2/day2.dart';
+import 'package:flutter100day/day3/day3.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,11 +25,12 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      initialRoute: '/2',
+      initialRoute: '/',
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => HomePage(),
         '/1': (BuildContext context) => FindYourInspiration(),
         '/2': (BuildContext context) => TravelGuide(),
+        '/3': (BuildContext context) => StarterPage(),
         // '/c': (BuildContext context) => ,
       },
     );

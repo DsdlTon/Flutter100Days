@@ -12,8 +12,9 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            WorkList('Day 1 - Find Inspiration'),
-            WorkList('Day 2 - Travel Guide'),
+            WorkList(context, 'Day 1 - Find Inspiration', '/1'),
+            WorkList(context, 'Day 2 - Travel Guide', '/2'),
+            WorkList(context, 'Day 3 - Food Delivery', '/3'),
           ],
         ),
       ),
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
-Widget WorkList(title) {
+Widget WorkList(context, title, page) {
   return Center(
     child: Card(
       child: Column(
@@ -48,6 +49,7 @@ Widget WorkList(title) {
                 ),
                 onPressed: () {
                   //Navigate to selected page
+                  Navigator.pushNamed(context, page);
                 },
               ),
             ],
