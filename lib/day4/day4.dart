@@ -156,10 +156,10 @@ class _DocumentaryState extends State<Documentary> {
                               child: ListView(
                                 scrollDirection: Axis.horizontal,
                                 children: <Widget>[
-                                  videoCard('assets/images/documentary1.jpg'),
-                                  videoCard('assets/images/documentary1.jpg'),
-                                  videoCard('assets/images/documentary1.jpg'),
-                                  videoCard('assets/images/documentary1.jpg'),
+                                  videoCard('assets/images/documentary5.jpg'),
+                                  videoCard('assets/images/documentary2.jpg'),
+                                  videoCard('assets/images/documentary3.jpg'),
+                                  videoCard('assets/images/documentary4.jpg'),
                                 ],
                               ),
                             ),
