@@ -30,6 +30,7 @@ dependencies:
   google_fonts: ^1.1.0
   simple_animations: ^1.3.3
   page_transition: ^1.1.4
+  animator: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,15 @@ flutter:
     - assets/images/documentary3.jpg
     - assets/images/documentary4.jpg
     - assets/images/documentary5.jpg
+    - assets/images/map1.jpg
+    - assets/images/map2.jpg
+    - assets/images/map3.jpg
+    - assets/images/map4.jpg
+    - assets/images/exercise1.jpg
+    - assets/images/me.jpg
+    # - assets/images/exercise2.jpg
+    # - assets/images/exercise3.jpg
+    # - assets/images/map5.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

@@ -16,6 +16,8 @@ class HomePage extends StatelessWidget {
             WorkList(context, 'Day 2 - Travel Guide', '/2'),
             WorkList(context, 'Day 3 - Food Delivery', '/3'),
             WorkList(context, 'Day 4 - Documentary', '/4'),
+            WorkList(context, 'Day 5 - MapApplication', '/5'),
+            WorkList(context, 'Day 6 - ExerciseApp', '/6'),
           ],
         ),
       ),

@@ -62,18 +62,18 @@ class _DocumentaryState extends State<Documentary> {
                                     '18 Seasons in NBA',
                                     style: TextStyle(
                                       color: Colors.grey,
-                                      fontSize: 16.0,
+                                      fontSize: 14.0,
                                     ),
                                   ),
                                 ),
-                                SizedBox(width: 50.0),
+                                SizedBox(width: 40.0),
                                 FadeAnimation(
                                   1.0,
                                   Text(
                                     'NBA Most Valuable Player',
                                     style: TextStyle(
                                       color: Colors.grey,
-                                      fontSize: 16.0,
+                                      fontSize: 14.0,
                                     ),
                                   ),
                                 ),
@@ -208,7 +208,7 @@ class _DocumentaryState extends State<Documentary> {
 
   Widget videoCard(image) {
     return AspectRatio(
-      aspectRatio: 1.5 / 1,
+      aspectRatio: 1.2 / 1,
       child: Container(
         margin: EdgeInsets.only(right: 20.0, top: 10.0),
         decoration: BoxDecoration(
