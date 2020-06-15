@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter100day/day5/day5.dart';
-import 'package:flutter100day/day6/day6.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter100day/home.dart';
@@ -9,6 +7,9 @@ import 'package:flutter100day/day1/day1.dart';
 import 'package:flutter100day/day2/day2.dart';
 import 'package:flutter100day/day3/day3.dart';
 import 'package:flutter100day/day4/day4.dart';
+import 'package:flutter100day/day5/day5.dart';
+import 'package:flutter100day/day6/day6.dart';
+import 'package:flutter100day/day7/day7.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/4': (BuildContext context) => Documentary(),
         '/5': (BuildContext context) => MapApplication(),
         '/6': (BuildContext context) => ExerciseApp(),
+        '/7': (BuildContext context) => AnimationButton(),
         // '/c': (BuildContext context) => ,
       },
     );

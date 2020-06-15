@@ -80,8 +80,8 @@ class _ExerciseAppState extends State<ExerciseApp>
       body: PageView(
         children: <Widget>[
           Page(image: 'assets/images/exercise1.jpg'),
-          Page(image: 'assets/images/exercise1.jpg'),
-          Page(image: 'assets/images/exercise1.jpg'),
+          // Page(image: 'assets/images/exercise1.jpg'),
+          // Page(image: 'assets/images/exercise1.jpg'),
         ],
       ),
     );
