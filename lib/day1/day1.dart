@@ -180,7 +180,6 @@ Widget promoCard(image) {
             ),
             fit: BoxFit.cover,
           ),
-          // fit: BoxFit.cover,
         ),
         child: Container(
           decoration: BoxDecoration(
@@ -199,4 +198,3 @@ Widget promoCard(image) {
     ),
   );
 }
-
