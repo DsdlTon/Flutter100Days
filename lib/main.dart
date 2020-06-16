@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter100day/day10/day10.dart';
 import 'package:flutter100day/day8/day8.dart';
 import 'package:flutter100day/day9/day9.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         '/7': (BuildContext context) => AnimationButton(),
         '/8': (BuildContext context) => SplashScreen(),
         '/9': (BuildContext context) => PartyApplication(),
+        '/10': (BuildContext context) => FurnitureShop(),
         // '/c': (BuildContext context) => ,
       },
     );

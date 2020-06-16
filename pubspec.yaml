@@ -74,6 +74,13 @@ flutter:
     - assets/images/party1.jpg
     - assets/images/party2.jpg
     - assets/images/party3.jpg
+    - assets/images/furniture1.jpg
+    - assets/images/furniture2.jpg
+    - assets/images/furniture3.jpg
+    - assets/images/furniture4.jpg
+    - assets/images/furniture5.jpg
+    - assets/images/furniture6.jpg
+    - assets/images/furniture7.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
