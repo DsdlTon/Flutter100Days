@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _widthController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 400),
+      duration: Duration(milliseconds: 300),
     );
 
     _widthAnimation = Tween<double>(
@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _positionController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 800),
+      duration: Duration(milliseconds: 400),
     );
 
     _positionAnimation = Tween<double>(
@@ -82,7 +82,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _scale2Controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 800),
+      duration: Duration(milliseconds: 500),
     );
 
     _scale2Animation = Tween<double>(
