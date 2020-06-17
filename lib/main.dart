@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter100day/day10/day10.dart';
 import 'package:flutter100day/day11/day11.dart';
 import 'package:flutter100day/day12/day12.dart';
+import 'package:flutter100day/day13/day13.dart';
 import 'package:flutter100day/day8/day8.dart';
 import 'package:flutter100day/day9/day9.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
         '/10': (BuildContext context) => FurnitureShop(),
         '/11': (BuildContext context) => TravelApplication(),
         '/12': (BuildContext context) => LoginUI(),
+        '/13': (BuildContext context) => LoginUI2(),
         // '/c': (BuildContext context) => ,
       },
     );
