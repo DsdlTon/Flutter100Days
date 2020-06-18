@@ -26,6 +26,8 @@ class HomePage extends StatelessWidget {
             WorkList(context, 'Day 12 - LoginUI', '/12'),
             WorkList(context, 'Day 13 - LoginUI2', '/13'),
             WorkList(context, 'Day 14 - LoginUI3', '/14'),
+            WorkList(context, 'Day 15 - ShoeShop', '/15'),
+            WorkList(context, 'Day 16 - E-Commerce Application', '/16'),
           ],
         ),
       ),
