@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter100day/day16/FadeAnimation.dart';
+import 'package:flutter100day/day16/day17.dart';
 
 class ShopPage extends StatefulWidget {
   @override
@@ -134,20 +135,35 @@ class _ShopPageState extends State<ShopPage> {
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           itemCard(
-                              image: 'assets/images/shopping3.jpg',
-                              title: 'Beauty'),
+                            image: 'assets/images/shopping3.jpg',
+                            title: 'Beauty',
+                            tag: 'Beauty',
+                            context: context,
+                          ),
                           itemCard(
-                              image: 'assets/images/shopping4.jpg',
-                              title: 'Cloth'),
+                            image: 'assets/images/shopping4.jpg',
+                            title: 'Cloth',
+                            tag: 'Cloth',
+                            context: context,
+                          ),
                           itemCard(
-                              image: 'assets/images/shopping5.jpg',
-                              title: 'Glasses'),
+                            image: 'assets/images/shopping5.jpg',
+                            title: 'Glasses',
+                            tag: 'Glasses',
+                            context: context,
+                          ),
                           itemCard(
-                              image: 'assets/images/shopping6.jpg',
-                              title: 'Tech'),
+                            image: 'assets/images/shopping6.jpg',
+                            title: 'Tech',
+                            tag: 'Tech',
+                            context: context,
+                          ),
                           itemCard(
-                              image: 'assets/images/shopping7.jpg',
-                              title: 'Watch'),
+                            image: 'assets/images/shopping7.jpg',
+                            title: 'Watch',
+                            tag: 'Watch',
+                            context: context,
+                          ),
                         ],
                       ),
                     ),
@@ -214,38 +230,57 @@ class _ShopPageState extends State<ShopPage> {
   }
 }
 
-Widget itemCard({image, title}) {
+Widget itemCard({image, title, tag, context}) {
   return AspectRatio(
     aspectRatio: 2 / 2.5,
-    child: Container(
-      margin: EdgeInsets.only(right: 10.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        image: DecorationImage(
-          image: AssetImage(image),
-          fit: BoxFit.cover,
-        ),
-      ),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          gradient: LinearGradient(
-            begin: Alignment.bottomRight,
-            colors: [
-              Colors.black.withOpacity(0.4),
-              Colors.black.withOpacity(0.1),
-            ],
-          ),
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(10.0),
-          child: Align(
-            alignment: Alignment.bottomLeft,
-            child: Text(
-              title,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+    child: Hero(
+      tag: tag,
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => CatagoryPage(
+                image: image,
+                title: title,
+                tag: tag,
+              ),
+            ),
+          );
+        },
+        child: Material(
+          child: Container(
+            margin: EdgeInsets.only(right: 10.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage(image),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                gradient: LinearGradient(
+                  begin: Alignment.bottomRight,
+                  colors: [
+                    Colors.black.withOpacity(0.4),
+                    Colors.black.withOpacity(0.1),
+                  ],
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
