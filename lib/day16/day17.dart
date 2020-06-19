@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter100day/day16/FadeAnimation.dart';
 
 class CatagoryPage extends StatefulWidget {
   final String title;
@@ -45,48 +46,54 @@ class _CatagoryPageState extends State<CatagoryPage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              IconButton(
-                                icon: Icon(Icons.arrow_back_ios,
-                                    color: Colors.white),
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: <Widget>[
-                                  IconButton(
-                                    icon:
-                                        Icon(Icons.search, color: Colors.white),
-                                    onPressed: () {},
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.favorite,
-                                        color: Colors.white),
-                                    onPressed: () {},
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.shopping_cart,
-                                        color: Colors.white),
-                                    onPressed: () {},
-                                  ),
-                                ],
-                              ),
-                            ],
+                          FadeAnimation(
+                            1.0,
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Icon(Icons.arrow_back_ios,
+                                      color: Colors.white),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: <Widget>[
+                                    IconButton(
+                                      icon: Icon(Icons.search,
+                                          color: Colors.white),
+                                      onPressed: () {},
+                                    ),
+                                    IconButton(
+                                      icon: Icon(Icons.favorite,
+                                          color: Colors.white),
+                                      onPressed: () {},
+                                    ),
+                                    IconButton(
+                                      icon: Icon(Icons.shopping_cart,
+                                          color: Colors.white),
+                                      onPressed: () {},
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                          Container(
-                            height: 150.0,
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                widget.title,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 40.0,
-                                  fontWeight: FontWeight.bold,
+                          FadeAnimation(
+                            1.2,
+                            Container(
+                              height: 150.0,
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  widget.title,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 40.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
                             ),
@@ -105,38 +112,44 @@ class _CatagoryPageState extends State<CatagoryPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text(
-                        'New Product',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold,
+                      FadeAnimation(
+                        1.4,
+                        Text(
+                          'New Product',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                      Row(
-                        children: <Widget>[
-                          Text(
-                            'View more',
-                            style: TextStyle(
-                              color: Colors.grey[500],
+                      FadeAnimation(
+                        1.6,
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              'View more',
+                              style: TextStyle(
+                                color: Colors.grey[500],
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Icon(
-                            Icons.arrow_forward_ios,
-                            color: Colors.grey[500],
-                            size: 12.0,
-                          )
-                        ],
+                            SizedBox(
+                              width: 5.0,
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.grey[500],
+                              size: 12.0,
+                            )
+                          ],
+                        ),
                       ),
                     ],
                   ),
                   SizedBox(height: 20.0),
-                  makeItem(title: 'Beauty', price: '100'),
-                  makeItem(title: 'Beauty', price: '100'),
-                  makeItem(title: 'Beauty', price: '100'),
+                  FadeAnimation(1.8, makeItem(title: 'Beauty', price: '100'),),
+                  FadeAnimation(2.0, makeItem(title: 'Beauty', price: '100'),),
+                  FadeAnimation(2.2, makeItem(title: 'Beauty', price: '100'),),
                 ],
               ),
             )
