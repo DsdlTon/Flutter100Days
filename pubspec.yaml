@@ -71,6 +71,9 @@ flutter:
     - assets/images/map4.jpg
     - assets/images/exercise1.jpg
     - assets/images/me.jpg
+    - assets/images/fin.jpg
+    - assets/images/leo.jpg
+    - assets/images/benning.jpg
     - assets/images/party1.jpg
     - assets/images/party2.jpg
     - assets/images/party3.jpg
@@ -106,7 +109,8 @@ flutter:
     - assets/images/watch1.jpg
     - assets/images/watch2.jpg
     - assets/images/watch3.jpg
-    
+    - assets/images/postImage.jpg
+    - assets/images/feedImage2.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
