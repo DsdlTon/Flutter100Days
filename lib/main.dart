@@ -8,6 +8,7 @@ import 'package:flutter100day/day15/day15.dart';
 import 'package:flutter100day/day16/day16.dart';
 import 'package:flutter100day/day18/day18.dart';
 import 'package:flutter100day/day19/day19.dart';
+import 'package:flutter100day/day20/day20.dart';
 import 'package:flutter100day/day8/day8.dart';
 import 'package:flutter100day/day9/day9.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -61,6 +62,7 @@ class MyApp extends StatelessWidget {
         '/16': (BuildContext context) => ECommerceApplication(),
         '/18': (BuildContext context) => CarouselUI(),
         '/19': (BuildContext context) => FacebookUI(),
+        '/20': (BuildContext context) => SockShopApplication(),
         // '/c': (BuildContext context) => ,
       },
     );
