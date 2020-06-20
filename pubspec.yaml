@@ -117,6 +117,11 @@ flutter:
     - assets/images/sock4.png
     - assets/images/sock5.png
     - assets/images/sock6.png
+    - assets/images/step-one.png
+    - assets/images/step-two.png
+    - assets/images/step-three.png
+    - assets//images/illustration.png
+    - assets//images/background.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
