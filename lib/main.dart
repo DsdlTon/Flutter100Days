@@ -10,6 +10,7 @@ import 'package:flutter100day/day18/day18.dart';
 import 'package:flutter100day/day19/day19.dart';
 import 'package:flutter100day/day20/day20.dart';
 import 'package:flutter100day/day21/day21.dart';
+import 'package:flutter100day/day22/day22.dart';
 import 'package:flutter100day/day23/day23.dart';
 import 'package:flutter100day/day8/day8.dart';
 import 'package:flutter100day/day9/day9.dart';
@@ -66,6 +67,7 @@ class MyApp extends StatelessWidget {
         '/19': (BuildContext context) => FacebookUI(),
         '/20': (BuildContext context) => SockShopApplication(),
         '/21': (BuildContext context) => StepTutorial(),
+        '/22': (BuildContext context) => PhotographyApplication(),
         '/23': (BuildContext context) => MainPage(),
         // '/c': (BuildContext context) => ,
       },

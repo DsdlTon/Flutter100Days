@@ -31,6 +31,7 @@ dependencies:
   simple_animations: ^1.3.3
   page_transition: ^1.1.4
   animator: ^1.0.0+1
+  flutter_staggered_grid_view: "^0.3.0"
 
 dev_dependencies:
   flutter_test:
@@ -122,6 +123,10 @@ flutter:
     - assets/images/step-three.png
     - assets//images/illustration.png
     - assets//images/background.png
+    - assets/images/icons/download.png
+    - assets/images/icons/heart.png
+    - assets/images/icons/link.png
+    - assets/images/icons/location.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
